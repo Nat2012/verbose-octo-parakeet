@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex Application Project</title>
+    <link rel="stylesheet" href="RGB.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Welcome To The Hex Application Project</h2>
+    <div class="RGB">
+        <input type="number" name="R" id="R" placeholder="Red">
+        <input type="number" name="G" id="G" placeholder="Green">
+        <input type="number" name="B" id="B" placeholder="Blue">
+        <input type="number" name="A" id="A" placeholder="Opacity">
+    </div>
+    <button id="btn" onclick="RGB()">Click for the color</button>
+</body>
+<script>
+    function RGB() {
+    let red = document.getElementById("R").value;
+    red = parseInt(red)
+    let green = document.getElementById("G").value;
+    green = parseInt(green)
+    let blue = document.getElementById("B").value;
+    blue = parseInt(blue)
+    let Opaque = document.getElementById("A").value;
+    Opaque = parseFloat(Opaque);
+    document.body.style.backgroundColor='rgba(' + red + ',' + green + ',' + blue + ',' + Opaque + ')';
+    }
+</script>
+</html>

@@ -1,0 +1,22 @@
+body{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2{
+    text-align: center;
+}
+
+.RGB{
+    display: flex;
+}
+
+.RGB input{
+    margin-left: 3cm;
+    margin-top: 5cm;
+    text-align: center;
+}
+
+#btn{
+    margin-top: 1cm;
+    margin-left: 580px;
+}
